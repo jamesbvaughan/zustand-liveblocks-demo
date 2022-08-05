@@ -32,7 +32,7 @@ function getRandomColor() {
 export type Shape = { x: number; y: number; fill: string };
 
 type ShapeDoc = {
-  shapes: { [id: string]: Shape };
+  shapes: Record<string, Shape>;
 }
 
 type Store = {
